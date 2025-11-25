@@ -1,0 +1,22 @@
+// custom variables
+$primary: #c24456;
+$light: rgb(173, 218, 143);
+$info: #524e85;
+$secondary: rgb(182, 182, 145);
+
+// import the functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors:(
+    "altlight": rgb(187, 152, 184),
+    "altdark": #544231,
+    "bright": rgba(255, 170, 13, 0.541),
+    "dim": rgba(54, 85, 116, 0.467)
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootsrtap
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
+
